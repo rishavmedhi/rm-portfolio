@@ -1,0 +1,25 @@
+#homepage-container{
+  min-height: 100vh;
+  position: relative;
+  .top-banner-wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    text-align: left;
+    .top-banner{
+      max-width: calc(700px + 2rem);
+      margin: 0 auto;
+      position: relative;
+      padding: 1rem;
+      .nav-tabs{
+        list-style-type: none;
+        padding: 0;
+        li{
+          display: inline-block;
+          padding-right: 1em;
+        }
+      }
+    }
+  }
+}
