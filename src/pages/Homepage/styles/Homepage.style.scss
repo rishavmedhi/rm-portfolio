@@ -15,17 +15,37 @@
       .sub-heading{
         font-size: 24px;
         font-weight: 300;
+        padding-bottom: 0.5em;
       }
       .nav-tabs{
         list-style-type: none;
         padding: 0;
         li{
-          display: inline-block;
           font-size: 18px;
           padding-right: 1em;
           font-weight: 500;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .top-banner{
+    .nav-tabs {
+      text-align: center;
+      li{
+        display: block;
+        margin: 1em 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1500px) {
+  .top-banner{
+    .nav-tabs li{
+      display: inline-block;
     }
   }
 }
