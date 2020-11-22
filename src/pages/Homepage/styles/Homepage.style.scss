@@ -5,7 +5,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 40%;
+    top: 30%;
     text-align: left;
     .top-banner{
       max-width: calc(700px + 2rem);
@@ -24,6 +24,9 @@
           font-size: 18px;
           padding-right: 1em;
           font-weight: 500;
+          a{
+            text-decoration: none;
+          }
         }
       }
     }
