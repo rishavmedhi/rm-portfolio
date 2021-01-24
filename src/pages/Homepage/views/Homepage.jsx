@@ -3,8 +3,9 @@ import '../styles/Homepage.style.scss';
 export default class Homepage extends Component {
   render() {
     return(
-      <div id="homepage-container">
-        <div class="top-banner-wrapper">
+      <div>
+        <div id="top-container">
+          <div className="top-banner-wrapper">
           <div class="top-banner">
             <h1>Hello, I'm Rishav Medhi</h1>
             <div class="sub-heading">
@@ -33,6 +34,12 @@ export default class Homepage extends Component {
             </nav>
           </div>
         </div>
+        </div>
+        <main>
+          <div className="about-me-wrapper">
+            <h2>About Me</h2>
+          </div>
+        </main>
       </div>
     )
   }
