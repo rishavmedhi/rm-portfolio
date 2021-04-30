@@ -32,23 +32,32 @@
     }
   }
 }
-.about-me-wrapper{
+.main-container{
   max-width: calc(700px + 2rem);
   margin: 0 auto;
-  position: relative;
-  padding: 1rem;
-  .content{
-    font-size: 16px;
+
+  .writing-wrapper{
+    margin-bottom: 4em;
+  }
+
+  .about-me-wrapper{
+    position: relative;
+    margin-bottom: 4em;
+    .content{
+      font-size: 16px;
+    }
   }
 }
 
 @media only screen and (max-width: 766px) {
-  .top-banner{
-    .nav-tabs {
-      text-align: center;
-      li{
-        display: block;
-        margin: 1em 0;
+  #top-container{
+    .top-banner{
+      .nav-tabs {
+        text-align: center;
+        li{
+          display: block;
+          margin: 1em 0;
+        }
       }
     }
   }

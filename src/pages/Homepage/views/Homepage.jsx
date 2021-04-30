@@ -35,7 +35,20 @@ export default class Homepage extends Component {
           </div>
         </div>
         </div>
-        <main>
+        <main className="main-container">
+          <div className="writing-wrapper">
+            <h1>Writing</h1>
+            <div className="article-wrapper">
+              <div className="article">
+                <div className="article-heading">
+                  Looking a year back, My Transition to Nodejs and Reactjs
+                </div>
+                <div className="article-subheading">
+                  My personal experience on how I made a tech stack transition
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="about-me-wrapper">
             <h1>About Me</h1>
             <div className="content">
