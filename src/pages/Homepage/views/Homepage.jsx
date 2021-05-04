@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ArticleItem from "../../../components/ArticleItem/ArticleItem";
 import '../styles/Homepage.style.scss';
 export default class Homepage extends Component {
   render() {
@@ -39,14 +40,11 @@ export default class Homepage extends Component {
           <div className="writing-wrapper">
             <h1>Writing</h1>
             <div className="article-wrapper">
-              <article>
-                <div className="article-heading">
-                  Looking a year back, My Transition to Nodejs and Reactjs
-                </div>
-                <p className="article-subheading">
-                  My personal experience on how I made a tech stack transition
-                </p>
-              </article>
+              <ArticleItem 
+                link="https://rishavmedhi.medium.com/looking-a-year-back-my-transition-to-nodejs-and-reactjs-ef96b6dab384"
+                heading="Looking a year back, My transition to Nodejs and Reactjs"
+                subHeading="A software developer’s experience with a tech stack transition and how it has made me a better software developer"
+              />
             </div>
           </div>
           <div className="about-me-wrapper">
