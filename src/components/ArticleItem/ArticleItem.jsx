@@ -4,9 +4,11 @@ import './styles.scss';
 const ArticleItem = (props) => {
   return(
     <article>
-      <a className="article-heading" href={props.link}>
-        {props.heading}
-      </a>
+      <h2>
+        <a href={props.link}>
+          {props.heading}
+        </a>
+      </h2>
       <p className="article-subheading">
         {props.subHeading}
       </p>

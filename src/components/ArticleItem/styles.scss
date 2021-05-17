@@ -1,5 +1,12 @@
 article{
-  a{
-    text-decoration: none;
+  h2{
+    font-weight: normal;
+    margin-bottom: 0;
+    a{
+      text-decoration: none;
+    }
+  }
+  .article-subheading{
+    font-size: 18px;
   }
 }
