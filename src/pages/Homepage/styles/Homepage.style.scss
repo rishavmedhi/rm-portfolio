@@ -24,8 +24,9 @@
           font-size: 18px;
           padding-right: 1em;
           font-weight: 500;
-          a{
+          a, a:visited{
             text-decoration: none;
+            color: #000;
           }
         }
       }
