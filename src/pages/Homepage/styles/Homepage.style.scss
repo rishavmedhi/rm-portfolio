@@ -1,6 +1,7 @@
 #top-container{
   min-height: 100vh;
   position: relative;
+  background-color: rgb(247, 250, 252);
   .top-banner-wrapper{
     position: absolute;
     left: 0;
@@ -26,7 +27,7 @@
           font-weight: 500;
           a, a:visited{
             text-decoration: none;
-            color: #000;
+            color: #718196;
           }
         }
       }
