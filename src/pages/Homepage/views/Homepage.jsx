@@ -8,14 +8,14 @@ export default class Homepage extends Component {
       <div>
         <div id="top-container">
           <div className="top-banner-wrapper">
-          <div class="top-banner">
-            <h1>Hello, I'm Rishav Medhi</h1>
-            <div class="sub-heading">
+          <div className="top-banner">
+            <h1>Hello, I&apos;m Rishav Medhi</h1>
+            <div className="sub-heading">
               Full Stack Developer<br/>
               Tech Geek. Loves Gaming, Doodling and Action Movies
             </div>
             <nav>
-              <ul class="nav-tabs">
+              <ul className="nav-tabs">
                 <li>
                   <a href="/about-me">About Me</a>
                 </li>

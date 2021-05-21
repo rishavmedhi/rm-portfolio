@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles.scss';
 
 const ArticleItem = (props) => {
@@ -15,5 +16,11 @@ const ArticleItem = (props) => {
     </article>
   )
 }
+
+ArticleItem.propTypes = {
+  link: PropTypes.string,
+  heading: PropTypes.string,
+  subHeading: PropTypes.string
+};
 
 export default ArticleItem;
