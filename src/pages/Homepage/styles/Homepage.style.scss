@@ -1,7 +1,14 @@
+:root{
+  --section-bg-color: #f7fafc;
+  --link-color: #718196;
+  --link-hover-color: #38578a;
+  --link-hover-black: #000;
+}
+
 #top-container{
   min-height: 100vh;
   position: relative;
-  background-color: rgb(247, 250, 252);
+  background-color: var(--section-bg-color);
   .top-banner-wrapper{
     position: absolute;
     left: 0;
@@ -27,11 +34,11 @@
           font-weight: 600;
           a, a:visited{
             text-decoration: none;
-            color: #718196;
+            color: var(--link-color);
             transition: 0.2s;
           }
           a:hover{
-            color: #000;
+            color: var(--link-hover-black);
             transition: 0.5s;
           }
         }
@@ -39,15 +46,15 @@
     }
   }
 }
-.main-container{
+.wrapper-spacing{
   max-width: calc(700px + 2rem);
   margin: 0 auto;
   padding: 1rem;
-
+}
+.main-container{
   .writing-wrapper{
     margin-bottom: 4em;
   }
-
   .about-me-wrapper{
     position: relative;
     margin-bottom: 4em;

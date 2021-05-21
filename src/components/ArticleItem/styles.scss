@@ -4,10 +4,10 @@ article{
     margin-bottom: 0;
     a, a:visited{
       text-decoration: none;
-      color: #718196
+      color: var(--link-color)
     }
     a:hover{
-      color: #38578a;
+      color:var(--link-hover-color);
       // border-bottom: 2px solid #c5d4f1;
       transition: 0.2s;
     }

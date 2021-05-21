@@ -38,7 +38,7 @@ export default class Homepage extends Component {
         </div>
         </div>
         <main className="main-container">
-          <div className="writing-wrapper">
+          <div className="writing-wrapper wrapper-spacing">
             <h1>Writing</h1>
             <h3>Technical Articles</h3>
             <div className="article-wrapper">
@@ -63,7 +63,7 @@ export default class Homepage extends Component {
               />
             </div>
           </div>
-          <div className="about-me-wrapper">
+          <div className="about-me-wrapper wrapper-spacing">
             <AboutMe />
           </div>
         </main>
