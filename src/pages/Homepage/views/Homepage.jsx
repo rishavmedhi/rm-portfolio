@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import AboutMe from "../../../components/AboutMe/AboutMe";
 import ArticleItem from "../../../components/ArticleItem/ArticleItem";
 import '../styles/Homepage.style.scss';
 export default class Homepage extends Component {
@@ -39,6 +40,7 @@ export default class Homepage extends Component {
         <main className="main-container">
           <div className="writing-wrapper">
             <h1>Writing</h1>
+            <h3>Technical Articles</h3>
             <div className="article-wrapper">
               <ArticleItem 
                 link="https://rishavmedhi.medium.com/looking-a-year-back-my-transition-to-nodejs-and-reactjs-ef96b6dab384"
@@ -46,20 +48,23 @@ export default class Homepage extends Component {
                 subHeading="A software developer’s experience with a tech stack transition and how it has made me a better software developer"
               />
             </div>
+            <br/>
+            <h3>Non-Technical Articles</h3>
+            <div className="article-wrapper">
+              <ArticleItem 
+                link="https://medium.com/the-innovation/my-journey-on-wrapping-up-my-first-inktober-challenge-bbf8161879cf"
+                heading="My Journey on wrapping up my first Inktober challenge"
+                subHeading="The 31-day drawing challenge, 1 drawing a day and there’s beginner me struggling to finish it up"
+              />
+              <ArticleItem 
+                link="https://medium.com/nerdvolume/levelling-up-your-binge-watching-game-during-this-self-isolation-time-deefa6572b57"
+                heading="Leveling up your Binge-Watching Game during this self-isolation time"
+                subHeading="Stay Home, Binge Watch"
+              />
+            </div>
           </div>
           <div className="about-me-wrapper">
-            <h1>About Me</h1>
-            <div className="content">
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-              </p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
+            <AboutMe />
           </div>
         </main>
       </div>
