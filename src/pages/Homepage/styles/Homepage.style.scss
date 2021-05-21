@@ -28,6 +28,11 @@
           a, a:visited{
             text-decoration: none;
             color: #718196;
+            transition: 0.2s;
+          }
+          a:hover{
+            color: #000;
+            transition: 0.5s;
           }
         }
       }
