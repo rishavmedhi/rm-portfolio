@@ -69,6 +69,9 @@ export default class Homepage extends Component {
             </div>
           </div>
         </main>
+        <footer>
+          <span>© 2021 Rishav Medhi · <a href="">Source</a></span>
+        </footer>
       </div>
     )
   }
