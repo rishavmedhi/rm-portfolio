@@ -63,8 +63,10 @@ export default class Homepage extends Component {
               />
             </div>
           </div>
-          <div className="about-me-wrapper wrapper-spacing">
-            <AboutMe />
+          <div className="about-me-wrapper">
+            <div className="wrapper-spacing">
+              <AboutMe />
+            </div>
           </div>
         </main>
       </div>
