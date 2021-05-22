@@ -1,20 +1,18 @@
 import React from 'react';
-// import './styles.scss';
+import './styles.scss';
 
 const AboutMe = (props) => {
   return(
     <div>
       <h1>About Me</h1>
       <div className="content">
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        <p> 
+          I&apos;m a full-stack-developer at <a href="https://zolostays.com/">Zolo</a>.
+          <br/>
+          I am currently working on projects in Nodejs, Express and React.
         </p>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <p>I also photograph sunsets and cool stuff around me. Check out my <a href="https://www.instagram.com/the_clicky_sight/">Instagram</a>.</p>
+        <p>You can find me on <a href="https://twitter.com/RishavMedhi">Twitter</a>, <a href="https://github.com/rishavmedhi">Github</a> and <a href="https://www.linkedin.com/in/rishavmedhi/">Linkedin</a></p>
       </div>
     </div>    
   )
