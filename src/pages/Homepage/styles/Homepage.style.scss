@@ -49,15 +49,13 @@
 .wrapper-spacing{
   max-width: calc(700px + 2rem);
   margin: 0 auto;
-  padding: 1rem;
+  padding: 4rem 1rem;
 }
 .main-container{
-  .writing-wrapper{
-    margin-bottom: 4em;
-  }
+  // .writing-wrapper{
+  // }
   .about-me-wrapper{
     position: relative;
-    margin-bottom: 4em;
     background-color: var(--section-bg-color);
   }
 }
