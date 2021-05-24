@@ -12,7 +12,7 @@ export default class Homepage extends Component {
             <h1>Hello, I&apos;m Rishav Medhi</h1>
             <div className="sub-heading">
               Full Stack Developer<br/>
-              Tech Geek. Loves Gaming, Doodling and Action Movies
+              Tinkerer, Fixer and Maker of good things for the web
             </div>
             <nav>
               <ul className="nav-tabs">
