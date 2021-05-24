@@ -1,43 +1,44 @@
-:root{
+:root {
   --section-bg-color: #f7fafc;
   --link-color: #718196;
   --link-hover-color: #38578a;
   --link-hover-black: #000;
 }
 
-#top-container{
+#top-container {
   min-height: 100vh;
   position: relative;
   background-color: var(--section-bg-color);
-  .top-banner-wrapper{
+  .top-banner-wrapper {
     position: absolute;
     left: 0;
     right: 0;
     top: 30%;
     text-align: left;
-    .top-banner{
+    .top-banner {
       max-width: calc(700px + 2rem);
       margin: 0 auto;
       position: relative;
       padding: 1rem;
-      .sub-heading{
+      .sub-heading {
         font-size: 24px;
         font-weight: 300;
         padding-bottom: 0.5em;
       }
-      .nav-tabs{
+      .nav-tabs {
         list-style-type: none;
         padding: 0;
-        li{
+        li {
           font-size: 18px;
           padding-right: 1em;
           font-weight: 600;
-          a, a:visited{
+          a,
+          a:visited {
             text-decoration: none;
             color: var(--link-color);
             transition: 0.2s;
           }
-          a:hover{
+          a:hover {
             color: var(--link-hover-black);
             transition: 0.5s;
           }
@@ -46,26 +47,27 @@
     }
   }
 }
-.wrapper-spacing{
+.wrapper-spacing {
   max-width: calc(700px + 2rem);
   margin: 0 auto;
   padding: 4rem 1rem;
 }
-.main-container{
+.main-container {
   // .writing-wrapper{
   // }
-  .about-me-wrapper{
+  .about-me-wrapper {
     position: relative;
     background-color: var(--section-bg-color);
   }
 }
 
-footer{
+footer {
   display: flex;
   justify-content: center;
   padding: 1rem;
   background-color: var(--section-bg-color);
-  a, a:visited {
+  a,
+  a:visited {
     text-decoration: none;
     color: var(--link-color);
     transition: 0.2s;
@@ -79,11 +81,11 @@ footer{
 }
 
 @media only screen and (max-width: 766px) {
-  #top-container{
-    .top-banner{
+  #top-container {
+    .top-banner {
       .nav-tabs {
         text-align: center;
-        li{
+        li {
           display: block;
           margin: 1em 0;
         }
@@ -93,8 +95,8 @@ footer{
 }
 
 @media only screen and (min-width: 767px) {
-  .top-banner{
-    .nav-tabs li{
+  .top-banner {
+    .nav-tabs li {
       display: inline-block;
     }
   }
