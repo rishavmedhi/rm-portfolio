@@ -17,20 +17,21 @@ export default class Homepage extends Component {
             <nav>
               <ul className="nav-tabs">
                 <li>
-                  <a href="/about-me">About Me</a>
-                </li>
-                <li>
-                <a href="https://github.com/rishavmedhi">
-                  Github
-                </a>
+                  <a href="/writing">Writing</a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com/in/rishavmedhi/">LinkedIn</a>
                 </li>
                 <li>
-                  <a href="/writing">Writing</a></li>
+                  <a href="https://www.linkedin.com/in/rishavmedhi/">Twitter</a>
+                </li>
                 <li>
-                  <a href="/contact">Contact Me</a>
+                  <a href="https://github.com/rishavmedhi">
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a href="/about-me">About Me</a>
                 </li>
               </ul>
             </nav>
