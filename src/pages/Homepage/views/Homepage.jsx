@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import AboutMe from "../../../components/AboutMe/AboutMe";
 import ArticleItem from "../../../components/ArticleItem/ArticleItem";
 import "../styles/Homepage.style.scss";
+import {ReactComponent as ChevronDown} from "../../../assets/ChevronDown.svg";
 export default class Homepage extends Component {
   render() {
     return (
@@ -39,6 +40,9 @@ export default class Homepage extends Component {
                 </ul>
               </nav>
             </div>
+          </div>
+          <div className="down-icon-wrapper">
+            <ChevronDown className="down-icon"/>
           </div>
         </div>
         <main className="main-container">

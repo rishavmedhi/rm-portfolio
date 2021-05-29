@@ -46,6 +46,18 @@
       }
     }
   }
+  .down-icon-wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    bottom: 3em;
+    .down-icon{
+      height:40px;
+      width: 40px;
+    }
+  }
 }
 .wrapper-spacing {
   max-width: calc(700px + 2rem);
@@ -82,12 +94,18 @@ footer {
 
 @media only screen and (max-width: 766px) {
   #top-container {
-    .top-banner {
-      .nav-tabs {
-        text-align: center;
-        li {
-          display: block;
-          margin: 1em 0;
+    .top-banner-wrapper{
+      top: 15%;
+      .top-banner {
+        .nav-tabs {
+          text-align: center;
+          margin-top: 3em;
+          li {
+            display: inline-block;
+            font-size: 16px;
+            padding-right: 1.5em;
+            margin-bottom: 1em;
+          }
         }
       }
     }
