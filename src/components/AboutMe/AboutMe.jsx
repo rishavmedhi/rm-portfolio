@@ -18,11 +18,11 @@ const AboutMe = (props) => {
           >
             Zolo
           </a>{" "}
-          <Emoji label="" symbol="👨🏻‍💻" size="24" />.
+          <Emoji label="" symbol="👨🏻‍💻" size={24} />.
           <br />I am currently working on projects in Nodejs, Express and React.
         </p>
         <p>
-          I also photograph sunsets <Emoji label="" symbol="🌇" size="24" /> and
+          I also photograph sunsets <Emoji label="" symbol="🌇" size={24} /> and
           cool stuff around me. Check out my{" "}
           <a
             href="https://www.instagram.com/the_clicky_sight/"
@@ -31,7 +31,7 @@ const AboutMe = (props) => {
           >
             Instagram
           </a>{" "}
-          <Emoji label="" symbol="📸" size="24" />.
+          <Emoji label="" symbol="📸" size={24} />.
         </p>
         <p>
           You can find me on{" "}
