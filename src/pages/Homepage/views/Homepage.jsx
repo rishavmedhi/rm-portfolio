@@ -4,11 +4,16 @@ import ArticleItem from "../../../components/ArticleItem/ArticleItem";
 import "../styles/Homepage.style.scss";
 import {ReactComponent as ChevronDown} from "../../../assets/ChevronDown.svg";
 export default class Homepage extends Component {
-  scrollDiv = createRef();
+  scrollToWritingDiv = createRef();
+  scrollToAboutMeDiv = createRef();
 
-  scrollSmoothHandler = () => {
-    this.scrollDiv.current.scrollIntoView({ behavior: "smooth" });
+  writeDivScrollHandler = () => {
+    this.scrollToWritingDiv.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  aboutMeDivScrollHandler = () => {
+    this.scrollToAboutMeDiv.current.scrollIntoView({ behavior: "smooth" })
+  }
 
   render() {
     return (
@@ -25,7 +30,7 @@ export default class Homepage extends Component {
               <nav>
                 <ul className="nav-tabs">
                   <li>
-                    <span onClick={this.scrollSmoothHandler}>Writing</span>
+                    <span onClick={this.writeDivScrollHandler}>Writing</span>
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/in/rishavmedhi/">
@@ -41,18 +46,18 @@ export default class Homepage extends Component {
                     <a href="https://github.com/rishavmedhi">Github</a>
                   </li>
                   <li>
-                    <a href="/about-me">About Me</a>
+                    <span onClick={this.aboutMeDivScrollHandler}>About Me</span>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
           <div className="down-icon-wrapper">
-            <ChevronDown className="down-icon" onClick={this.scrollSmoothHandler} />
+            <ChevronDown className="down-icon" onClick={this.writeDivScrollHandler} />
           </div>
         </div>
         <main className="main-container">
-          <div className="writing-wrapper wrapper-spacing" ref={this.scrollDiv}>
+          <div className="writing-wrapper wrapper-spacing" ref={this.scrollToWritingDiv}>
             <h1>Writing</h1>
             <h3>Technical Articles</h3>
             <div className="article-wrapper">
@@ -77,7 +82,7 @@ export default class Homepage extends Component {
               />
             </div>
           </div>
-          <div className="about-me-wrapper">
+          <div className="about-me-wrapper" ref={this.scrollToAboutMeDiv}>
             <div className="wrapper-spacing">
               <AboutMe />
             </div>
