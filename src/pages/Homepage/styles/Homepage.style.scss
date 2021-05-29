@@ -32,13 +32,14 @@
           font-size: 18px;
           padding-right: 1em;
           font-weight: 600;
-          a,
-          a:visited {
+          a, span,
+          a:visited, span:visited {
+            cursor: pointer;
             text-decoration: none;
             color: var(--link-color);
             transition: 0.2s;
           }
-          a:hover {
+          a:hover, span:hover {
             color: var(--link-hover-black);
             transition: 0.5s;
           }

@@ -1,9 +1,15 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import AboutMe from "../../../components/AboutMe/AboutMe";
 import ArticleItem from "../../../components/ArticleItem/ArticleItem";
 import "../styles/Homepage.style.scss";
 import {ReactComponent as ChevronDown} from "../../../assets/ChevronDown.svg";
 export default class Homepage extends Component {
+  scrollDiv = createRef();
+
+  scrollSmoothHandler = () => {
+    this.scrollDiv.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   render() {
     return (
       <div>
@@ -19,7 +25,7 @@ export default class Homepage extends Component {
               <nav>
                 <ul className="nav-tabs">
                   <li>
-                    <a href="/writing">Writing</a>
+                    <span onClick={this.scrollSmoothHandler}>Writing</span>
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/in/rishavmedhi/">
@@ -42,11 +48,11 @@ export default class Homepage extends Component {
             </div>
           </div>
           <div className="down-icon-wrapper">
-            <ChevronDown className="down-icon"/>
+            <ChevronDown className="down-icon" onClick={this.scrollSmoothHandler} />
           </div>
         </div>
         <main className="main-container">
-          <div className="writing-wrapper wrapper-spacing">
+          <div className="writing-wrapper wrapper-spacing" ref={this.scrollDiv}>
             <h1>Writing</h1>
             <h3>Technical Articles</h3>
             <div className="article-wrapper">
