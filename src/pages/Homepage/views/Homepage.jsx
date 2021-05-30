@@ -59,7 +59,7 @@ export default class Homepage extends Component {
         <main className="main-container">
           <div className="writing-wrapper wrapper-spacing" ref={this.scrollToWritingDiv}>
             <h1>Writing</h1>
-            <h3>Technical Articles</h3>
+            <h3>Developer Stuff</h3>
             <div className="article-wrapper">
               <ArticleItem
                 link="https://rishavmedhi.medium.com/looking-a-year-back-my-transition-to-nodejs-and-reactjs-ef96b6dab384"
@@ -68,7 +68,7 @@ export default class Homepage extends Component {
               />
             </div>
             <br />
-            <h3>Non-Technical Articles</h3>
+            <h3>Everything apart from Coding</h3>
             <div className="article-wrapper">
               <ArticleItem
                 link="https://medium.com/the-innovation/my-journey-on-wrapping-up-my-first-inktober-challenge-bbf8161879cf"
