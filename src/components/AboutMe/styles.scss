@@ -1,0 +1,16 @@
+.content {
+  font-size: 18px;
+  a,
+  a:visited {
+    text-decoration: none;
+    color: var(--link-color);
+    // color: #000;
+    transition: 0.2s;
+    font-weight: 600;
+  }
+  a:hover {
+    color: var(--link-hover-color);
+    transition: 0.5s;
+    text-decoration: underline;
+  }
+}

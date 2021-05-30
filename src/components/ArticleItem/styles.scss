@@ -1,0 +1,19 @@
+article {
+  h2 {
+    font-weight: 600;
+    margin-bottom: 0;
+    a,
+    a:visited {
+      text-decoration: none;
+      color: var(--link-color);
+    }
+    a:hover {
+      color: var(--link-hover-color);
+      // border-bottom: 2px solid #c5d4f1;
+      transition: 0.2s;
+    }
+  }
+  .article-subheading {
+    font-size: 18px;
+  }
+}
