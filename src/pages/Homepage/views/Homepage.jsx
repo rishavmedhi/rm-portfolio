@@ -90,7 +90,7 @@ export default class Homepage extends Component {
         </main>
         <footer>
           <span>
-            © 2021 Rishav Medhi · <a href="">Source</a>
+            © 2021 Rishav Medhi · <a href="https://github.com/rishavmedhi/rm-portfolio">Source</a>
           </span>
         </footer>
       </div>
