@@ -38,7 +38,7 @@ export default class Homepage extends Component {
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/rishavmedhi/">
+                    <a href="https://twitter.com/RishavMedhi">
                       Twitter
                     </a>
                   </li>
@@ -90,7 +90,7 @@ export default class Homepage extends Component {
         </main>
         <footer>
           <span>
-            © 2021 Rishav Medhi · <a href="">Source</a>
+            © 2021 Rishav Medhi · <a href="https://github.com/rishavmedhi/rm-portfolio">Source</a>
           </span>
         </footer>
       </div>
