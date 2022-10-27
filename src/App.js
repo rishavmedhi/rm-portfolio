@@ -1,13 +1,23 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./App.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Homepage from "./pages/Homepage/views/Homepage";
-import ReactGA from 'react-ga';
+import {
+  TRACKING_ID,
+  initialiseGA,
+  triggerPageView,
+} from "./utils/tracker.utils";
+import ReactGA from "react-ga";
 
 function App() {
-  const TRACKING_ID = "UA-198139037-1"; 
-  ReactGA.initialize(TRACKING_ID);
-  ReactGA.send('pageview')
+  try {
+    initialiseGA(TRACKING_ID);
+    triggerPageView();
+  } catch (e) {
+    console.log("GA failed to initialise", e.message);
+  }
+
   return (
     <Router>
       <Switch>

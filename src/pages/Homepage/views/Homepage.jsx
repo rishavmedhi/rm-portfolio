@@ -1,8 +1,9 @@
 import React, { Component, createRef } from "react";
+import Footer from "../../../components/Footer/Footer";
 import AboutMe from "../../../components/AboutMe/AboutMe";
 import ArticleItem from "../../../components/ArticleItem/ArticleItem";
 import "../styles/Homepage.style.scss";
-import {ReactComponent as ChevronDown} from "../../../assets/ChevronDown.svg";
+import { ReactComponent as ChevronDown } from "../../../assets/ChevronDown.svg";
 export default class Homepage extends Component {
   scrollToWritingDiv = createRef();
   scrollToAboutMeDiv = createRef();
@@ -12,8 +13,8 @@ export default class Homepage extends Component {
   };
 
   aboutMeDivScrollHandler = () => {
-    this.scrollToAboutMeDiv.current.scrollIntoView({ behavior: "smooth" })
-  }
+    this.scrollToAboutMeDiv.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   render() {
     return (
@@ -38,9 +39,7 @@ export default class Homepage extends Component {
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/RishavMedhi">
-                      Twitter
-                    </a>
+                    <a href="https://twitter.com/RishavMedhi">Twitter</a>
                   </li>
                   <li>
                     <a href="https://github.com/rishavmedhi">Github</a>
@@ -53,11 +52,17 @@ export default class Homepage extends Component {
             </div>
           </div>
           <div className="down-icon-wrapper">
-            <ChevronDown className="down-icon" onClick={this.writeDivScrollHandler} />
+            <ChevronDown
+              className="down-icon"
+              onClick={this.writeDivScrollHandler}
+            />
           </div>
         </div>
         <main className="main-container">
-          <div className="writing-wrapper wrapper-spacing" ref={this.scrollToWritingDiv}>
+          <div
+            className="writing-wrapper wrapper-spacing"
+            ref={this.scrollToWritingDiv}
+          >
             <h1>Writing</h1>
             <h3>Developer Stuff</h3>
             <div className="article-wrapper">
@@ -88,11 +93,7 @@ export default class Homepage extends Component {
             </div>
           </div>
         </main>
-        <footer>
-          <span>
-            © 2021 Rishav Medhi · <a href="https://github.com/rishavmedhi/rm-portfolio">Source</a>
-          </span>
-        </footer>
+        <Footer />
       </div>
     );
   }
