@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <span>
-        © 2021 Rishav Medhi ·{" "}
+        © {new Date().getFullYear()} Rishav Medhi ·{" "}
         <a href="https://github.com/rishavmedhi/rm-portfolio">Source</a>
       </span>
     </footer>
