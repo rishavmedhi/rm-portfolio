@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./App.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Homepage from "./pages/Homepage/views/Homepage";
@@ -8,7 +7,6 @@ import {
   initialiseGA,
   triggerPageView,
 } from "./utils/tracker.utils";
-import ReactGA from "react-ga";
 
 function App() {
   try {
