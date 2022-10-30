@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage/views/Homepage";
 import {
   TRACKING_ID,
@@ -18,9 +18,9 @@ function App() {
 
   return (
     <Router>
-      <Switch>
-        <Route path={"/"} component={Homepage}></Route>
-      </Switch>
+      <Routes>
+        <Route path={"/"} element={<Homepage />}></Route>
+      </Routes>
     </Router>
   );
 }

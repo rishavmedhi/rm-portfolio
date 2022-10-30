@@ -1,7 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { render, screen, fireEvent } from "@testing-library/react";
 import Homepage from "./views/Homepage";
+import { act } from "react-dom/test-utils";
 
 const realScrollIntoViewPrototype = HTMLElement.prototype.scrollIntoView;
 var scrollIntoViewMock;
@@ -18,8 +19,10 @@ afterEach(() => {
 });
 
 it("renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<Homepage />, div);
+  const root = createRoot(document.createElement("div"));
+  act(() => {
+    root.render(<Homepage />);
+  });
 });
 
 it("scrolling to writing section on clicking writing nav link", () => {
