@@ -2,7 +2,10 @@ import React from "react";
 import Emoji from "../Emoji/Emoji";
 import "./styles.scss";
 
-const AboutMe = (props) => {
+/**
+ * About me section component
+ */
+const AboutMe = () => {
   return (
     <div>
       <h1>
