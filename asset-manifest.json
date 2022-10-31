@@ -1,23 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.66a9ba60.chunk.css",
-    "main.js": "/static/js/main.dac71211.chunk.js",
-    "main.js.map": "/static/js/main.dac71211.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c4c3c76a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c4c3c76a.js.map",
-    "static/js/2.9d6735c9.chunk.js": "/static/js/2.9d6735c9.chunk.js",
-    "static/js/2.9d6735c9.chunk.js.map": "/static/js/2.9d6735c9.chunk.js.map",
-    "static/js/3.58938d69.chunk.js": "/static/js/3.58938d69.chunk.js",
-    "static/js/3.58938d69.chunk.js.map": "/static/js/3.58938d69.chunk.js.map",
+    "main.css": "/static/css/main.b6a46db4.css",
+    "main.js": "/static/js/main.2ac2e875.js",
+    "static/js/496.043109ed.chunk.js": "/static/js/496.043109ed.chunk.js",
     "index.html": "/index.html",
-    "static/css/main.66a9ba60.chunk.css.map": "/static/css/main.66a9ba60.chunk.css.map",
-    "static/js/2.9d6735c9.chunk.js.LICENSE.txt": "/static/js/2.9d6735c9.chunk.js.LICENSE.txt",
-    "static/media/ChevronDown.aeff9ba7.svg": "/static/media/ChevronDown.aeff9ba7.svg"
+    "static/media/ChevronDown.svg": "/static/media/ChevronDown.aeff9ba7eb139fadf2f59f7a2b844d5a.svg",
+    "main.b6a46db4.css.map": "/static/css/main.b6a46db4.css.map",
+    "main.2ac2e875.js.map": "/static/js/main.2ac2e875.js.map",
+    "496.043109ed.chunk.js.map": "/static/js/496.043109ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.c4c3c76a.js",
-    "static/js/2.9d6735c9.chunk.js",
-    "static/css/main.66a9ba60.chunk.css",
-    "static/js/main.dac71211.chunk.js"
+    "static/css/main.b6a46db4.css",
+    "static/js/main.2ac2e875.js"
   ]
 }
