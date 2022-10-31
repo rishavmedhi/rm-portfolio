@@ -1,4 +1,5 @@
 import React, { Component, createRef } from "react";
+import { motion } from "framer-motion";
 import Footer from "../../../components/Footer/Footer";
 import AboutMe from "../../../components/AboutMe/AboutMe";
 import ArticleItem from "../../../components/ArticleItem/ArticleItem";
@@ -19,53 +20,65 @@ const Homepage = () => {
     <div>
       <div id="top-container">
         <div className="top-banner-wrapper">
-          <div className="top-banner">
-            <h1>Hello, I&apos;m Rishav Medhi</h1>
-            <div className="sub-heading">
-              Full Stack Developer
-              <br />
-              Tinkerer, Fixer and Maker of good things for the web
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5, type: "tween", ease: "easeOut" }}
+          >
+            <div className="top-banner">
+              <h1>Hello, I&apos;m Rishav Medhi</h1>
+              <div className="sub-heading">
+                Full Stack Developer
+                <br />
+                Tinkerer, Fixer and Maker of good things for the web
+              </div>
+              <nav>
+                <ul className="nav-tabs">
+                  <li>
+                    <span
+                      data-testid="nav-writing"
+                      onClick={writeDivScrollHandler}
+                    >
+                      Writing
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/rishavmedhi/">
+                      LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/RishavMedhi">Twitter</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/rishavmedhi">Github</a>
+                  </li>
+                  <li>
+                    <span
+                      data-testid="nav-about-me"
+                      onClick={aboutMeDivScrollHandler}
+                    >
+                      About Me
+                    </span>
+                  </li>
+                </ul>
+              </nav>
             </div>
-            <nav>
-              <ul className="nav-tabs">
-                <li>
-                  <span
-                    data-testid="nav-writing"
-                    onClick={writeDivScrollHandler}
-                  >
-                    Writing
-                  </span>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/rishavmedhi/">
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/RishavMedhi">Twitter</a>
-                </li>
-                <li>
-                  <a href="https://github.com/rishavmedhi">Github</a>
-                </li>
-                <li>
-                  <span
-                    data-testid="nav-about-me"
-                    onClick={aboutMeDivScrollHandler}
-                  >
-                    About Me
-                  </span>
-                </li>
-              </ul>
-            </nav>
+          </motion.div>
+        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+        >
+          <div className="down-icon-wrapper">
+            <ChevronDown
+              data-testid="down-icon"
+              className="down-icon"
+              onClick={writeDivScrollHandler}
+            />
           </div>
-        </div>
-        <div className="down-icon-wrapper">
-          <ChevronDown
-            data-testid="down-icon"
-            className="down-icon"
-            onClick={writeDivScrollHandler}
-          />
-        </div>
+        </motion.div>
       </div>
       <main className="main-container">
         <div
